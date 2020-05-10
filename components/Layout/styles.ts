@@ -8,6 +8,8 @@ export const Container = styled.div`
   top: 0px;
   left: 0px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 `;
 
 export const YellowBlob = styled.img`

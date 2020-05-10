@@ -10,9 +10,7 @@ const Index: NextPage = () => {
         <title>Joseph Smith</title>
       </Head>
       <Header />
-      <Title>
-        Watch me code this on <a href="https://youtu.be/ON_0tqGTNyE">YouTube</a>
-      </Title>
+      <Title />
     </>
   );
 };

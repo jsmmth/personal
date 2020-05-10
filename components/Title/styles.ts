@@ -9,3 +9,10 @@ export const HeadingText = styled.h1`
     color: #fff;
   }
 `;
+
+export const TitleContainer = styled.div`
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
