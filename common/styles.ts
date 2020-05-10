@@ -28,9 +28,11 @@ export default createGlobalStyle`
     font-family: 'cerebri-sans', --apple-system, Roboto, 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    /* Custom Cursor */
     cursor: url("images/cursor.svg") 0 0, auto;
     cursor: url("images/cursor.png") 0 0, pointer;
     cursor: url("images/cursor.svg") 0 0, pointer;
-    cursor: -webkit-image-set(url("images/cursor.png") 1x, url("images/cursor@2x.png") 2x) 0 0, pointer; /* Webkit */
+    cursor: -webkit-image-set(url("images/cursor.png") 1x, url("images/cursor@2x.png") 2x) 0 0, pointer;
   }
 `;
