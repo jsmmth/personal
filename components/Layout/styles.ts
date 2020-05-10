@@ -8,7 +8,42 @@ export const Container = styled.div`
   top: 0px;
   left: 0px;
   overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+`;
+
+export const YellowBlob = styled.img`
+  position: absolute;
+  top: -30vw;
+  right: -50vw;
+  width: 150vw;
+  height: 150vh;
+  animation: yellowMove 20s ease-in-out infinite;
+  filter: blur(100px);
+
+  @keyframes yellowMove {
+    40% {
+      transform: translate(40vw, 0vh);
+    }
+    80% {
+      transform: translate(0vw, 0vh);
+    }
+  }
+`;
+
+export const PinkBlob = styled.img`
+  position: absolute;
+  top: 0vw;
+  left: 0vw;
+  width: 80vw;
+  height: 90vh;
+  animation: pinkMove 10s ease-in-out infinite;
+  filter: blur(100px);
+
+  @keyframes pinkMove {
+    40% {
+      transform: translate(40vw, 0vh);
+    }
+    80% {
+      transform: translate(0vw, -20vh);
+    }
+  }
 `;
