@@ -12,6 +12,14 @@ export const Container = styled.div`
   flex-direction: column;
 `;
 
+export const StyledLayout = styled.div`
+  width: 100%;
+  max-width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+`;
+
 export const YellowBlob = styled.img`
   position: absolute;
   top: -30vw;

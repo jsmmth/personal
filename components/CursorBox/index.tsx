@@ -9,15 +9,25 @@ const CursorBox: React.FC = () => {
     if (boxRef.current) {
       boxRef.current.setAttribute(
         "style",
-        `transform: translate3d(${pageX + 10}px, ${pageY + 10}px, 0);`
+        `transform: translate3d(${pageX + 10}px, ${
+          pageY + 10
+        }px, 0); opacity: 1;`
       );
+    }
+  };
+
+  const onMouseOut = () => {
+    if (boxRef.current) {
+      boxRef.current.setAttribute("style", `opacity: 0;`);
     }
   };
 
   useEffect(() => {
     document.addEventListener("mousemove", onMouseMove);
+    document.addEventListener("mouseout", onMouseOut);
     return () => {
       document.removeEventListener("mousemove", onMouseMove);
+      document.removeEventListener("mouseout", onMouseOut);
     };
   }, []);
 
