@@ -24,7 +24,10 @@ export default createGlobalStyle`
 
   html, body {
     margin: 0px;
+    background-color: #ff9cd7;
     font-family: 'cerebri-sans', --apple-system, Roboto, 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     cursor: url("images/cursor.svg") 0 0, auto;
     cursor: url("images/cursor.png") 0 0, pointer;
     cursor: url("images/cursor.svg") 0 0, pointer;

@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { NextPage } from "next";
+import { HeadingText } from "./styles";
 
 const Index: NextPage = () => {
   return (
@@ -7,7 +8,9 @@ const Index: NextPage = () => {
       <Head>
         <title>Joseph Smith</title>
       </Head>
-      <div>Hello</div>
+      <HeadingText>
+        Watch me code this on <a href="https://youtu.be/ON_0tqGTNyE">YouTube</a>
+      </HeadingText>
     </>
   );
 };
