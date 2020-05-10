@@ -10,4 +10,5 @@ export const StyledBox = styled.div`
   font-weight: 500;
   color: #000;
   background: red;
+  opacity: 0;
 `;
