@@ -13,7 +13,7 @@ const Header: React.FC = () => {
       </HeaderText>
       <HeaderText top={32}>
         <img src="/images/live-icon.svg" />
-        <a href="https://youtu.be/ON_0tqGTNyE">What me code</a> my site live
+        <a href="https://youtu.be/ON_0tqGTNyE">Watch me code</a> my site live
       </HeaderText>
     </StyledHeader>
   );
