@@ -1,7 +1,9 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useContext } from "react";
 import { StyledBox } from "./styles";
+import { StateContext } from "common/store";
 
 const CursorBox: React.FC = () => {
+  const { state } = useContext(StateContext);
   const boxRef = useRef<HTMLDivElement | null>(null);
 
   const onMouseMove = (event: MouseEvent) => {
@@ -9,8 +11,8 @@ const CursorBox: React.FC = () => {
     if (boxRef.current) {
       boxRef.current.setAttribute(
         "style",
-        `transform: translate3d(${pageX + 10}px, ${
-          pageY + 10
+        `transform: translate3d(${pageX + 20}px, ${
+          pageY + 20
         }px, 0); opacity: 1;`
       );
     }
@@ -31,7 +33,7 @@ const CursorBox: React.FC = () => {
     };
   }, []);
 
-  return <StyledBox ref={boxRef}>Helllooo!!</StyledBox>;
+  return <StyledBox ref={boxRef}>{state.text}</StyledBox>;
 };
 
 export default CursorBox;

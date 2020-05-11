@@ -1,10 +1,11 @@
 import React from "react";
 import { StyledFooter } from "./styles";
+import Animoji from "components/Animoji";
 
 const Footer: React.FC = () => {
   return (
     <StyledFooter>
-      <img src="images/animoji.png" width="244" height="249" />
+      <Animoji />
     </StyledFooter>
   );
 };

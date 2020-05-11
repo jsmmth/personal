@@ -9,6 +9,7 @@ export const StyledBox = styled.div`
   font-size: 10px;
   font-weight: 500;
   color: #000;
-  background: red;
+  background: #ff6b76;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.26);
   opacity: 0;
 `;

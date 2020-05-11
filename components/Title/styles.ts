@@ -8,6 +8,12 @@ export const HeadingText = styled.h1`
   a {
     color: #fff;
   }
+
+  @media screen and (max-width: 1080px) {
+    font-size: 40px;
+    text-align: center;
+    padding: 0px 40px;
+  }
 `;
 
 export const TitleContainer = styled.div`
