@@ -20,6 +20,7 @@ type ActionType = {
 const reducer = (state: typeof initialState, action: ActionType) => {
   switch (action.type) {
     case UPDATE_TEXT:
+      console.log("updating to: ", action.payload);
       return { ...state, text: action.payload };
     default:
       return state;
